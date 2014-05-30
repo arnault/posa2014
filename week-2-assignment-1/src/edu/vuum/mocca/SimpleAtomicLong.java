@@ -67,7 +67,7 @@ class SimpleAtomicLong
         // TODO -- you fill in here
         mRWLock.writeLock().lock();
         try { 
-            mValue = mValue - 1;
+            mValue -= 1;
             value = mValue;
             return value;
         }
